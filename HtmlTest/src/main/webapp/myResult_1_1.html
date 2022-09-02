@@ -11,6 +11,7 @@
 
 ul, li {
 	list-style: none;
+	 padding-left:0px;
 }
 
 table, tr, td {
@@ -38,18 +39,20 @@ table, tr, td {
 }
 
  p { 
-
-/*  	color: cornflowerblue;  */
-/* 	font-style: 1px solid blue; */
-/*   	border: 1px solid blue; */
    	width: 150px; 
-/*   	height: 30px;  */
-/*    	margin: 0;  */
-/*    	padding: 0;  */
- 
  }   
 
 a {	border-style:  1px solid #ccc;	}
+
+.main1 > li  { 
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+.main2 {
+/* 	width: 30%; */
+/* 	float: left; */
+}
 
 </style>
 </head>
@@ -87,13 +90,13 @@ a {	border-style:  1px solid #ccc;	}
 <hr>
 
 
-<ul>
+<ul class="main1">
 	<li><!-- 1번 -->
 		<strong>수출상담 및 포럼1</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미2 -->
 				<p style="background-color: cornflowerblue">국내 수출상담회</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">국내 수출상담회</a></li>
 				</ul>
 			</li>
