@@ -39,10 +39,14 @@ table, tr, td {
 /* 	float: left; */
 }
 
-.middlesection {
-	position: relative; 	
-	top: 10px;
-}
+/* .middlesection { */
+/*  	position: relative; 	  */
+/* 	top: 10px;  */
+/* 	padding-right: 100px; */
+/* /* 	left: 100px; */ */
+/* 	right: 200px; */
+/* }  */
+
 
 
 /* .main2 >li> ul > li {	 */ /* 흰동그라미 */
@@ -55,15 +59,15 @@ table, tr, td {
 	padding-bottom: 50px;
 	padding-top: 20px;
 	border-bottom: 1px solid #ccc;
-	height: 500px;
 }
 
 .main2 {
 	position: absolute;
 	left: 200px;
 	width: 250px;
-/* 	height: 500px; */
-/* 	padding-bottom: 50px; */
+	box-sizing: border-box;
+/* 	border-radius: 40px; */
+/* 	border: 2px solid red; */
 }
 
 .main3 {
@@ -71,14 +75,17 @@ table, tr, td {
 	left: 300px;
 	width: 300px;
 	background-color: yellow;
-/* 	height: 500px; */
-/* 	padding-bottom: 50px; */
+ 	border: 2px solid red; 
+	box-sizing: border-box;
+	border-radius: 40px;
 }
 
-/* .main2 > li { */
-/*  	box-sizing: content-box;  */
-/* 	width: 150px; */
-/* } */
+.main2 > li > p {  /* 파랑색 동그라미 */
+/*   	box-sizing: content-box;  */
+ 	border: 2px solid red; 
+	border-radius: 40px;
+  	 
+} 
 
 </style>
 </head>
@@ -109,60 +116,62 @@ table, tr, td {
 </div><!-- 첫번째 구역 -->
 
 
-<div class="middlesection"><!-- 가운데 구역 - 제목? -->
-	<h3>수출지원</h3>
-	<hr>
-</div>
 
 
 <div class="secondsection"><!-- 두번째 구역-본문 -->
 
+<div class="middlesection"><!-- 가운데 구역-제목? -->
+	<h3>수출지원</h3>
+	<hr>
+</div>
 
 <ul class="main1">
-	<li><!-- 1번 -->
-		<strong>수출상담 및 포럼1</strong>
-		<ul class="main2">
-			<li><!-- 파랑색 동그라미2 -->
-				<p style="background-color: cornflowerblue">국내 수출상담회</p>
-				<ul class="main3"><!-- 흰색 동그라미 -->
-					<li><a href="">국내 수출상담회</a></li>
-				</ul>
-			</li>
+	<div id="menu">
+		<li><!-- 1번 -->
+			<strong>수출상담 및 포럼1</strong>
+			<ul class="main2">
+				<li><!-- 파랑색 동그라미2 -->
+					<p style="background-color: cornflowerblue">국내 수출상담회</p>
+					<ul class="main3"><!-- 흰색 동그라미 -->
+						<li><a href="">국내 수출상담회</a></li>
+					</ul>
+				</li>
+				
+				<li><!-- 파랑색 동그라미2 -->
+					<p style="background-color: cornflowerblue">해외 출장수출상담지원(개별기업)</p>
+					<ul class="main3"><!-- 흰색 동그라미 -->
+						<li><a href="">ICT 글로벌 멘토링 센터</a></li>
+					</ul>
+				</li>
+				<li><!-- 파랑색 동그라미3 -->
+					<p style="background-color: cornflowerblue">국내 비즈니스 포럼(수출상담회+설명회)</p>
+					<ul class="main3"><!-- 흰색 동그라미 -->
+						<li><a href="">대한민국 소비재 수출대전</a></li>
+						<li><a href="">글로벌 모바일 비전(GMV)</a></li>
+						<li><a href="">서비스 수출대전(KSM)</a></li>
+						<li><a href="">글로벌 의료기기 수출상담회(Global Medical Equipment Plaza)</a></li>
+						<li><a href="">글로벌파트너링(GP)사업</a></li>
+					</ul>
+				</li>
+				
+				<li><!-- 파랑색 동그라미4 -->
+					<p style="background-color: cornflowerblue">해외 비지니스 포럼(수출상담회+설명회)-경제외교 제외</p>
+					<ul class="main3"><!-- 흰색 동그라미 -->
+						<li><a href="">K-Global@</a></li>
+						<li><a href="">바이오의료 해외진출 지원사업</a></li>
+					</ul>
+				</li>
+			</ul>	
 			
-			<li><!-- 파랑색 동그라미2 -->
-				<p style="background-color: cornflowerblue">해외 출장수출상담지원(개별기업)</p>
-				<ul class="main3"><!-- 흰색 동그라미 -->
-					<li><a href="">ICT 글로벌 멘토링 센터</a></li>
-				</ul>
-			</li>
-			<li><!-- 파랑색 동그라미3 -->
-				<p style="background-color: cornflowerblue">국내 비즈니스 포럼(수출상담회+설명회)</p>
-				<ul class="main3"><!-- 흰색 동그라미 -->
-					<li><a href="">대한민국 소비재 수출대전</a></li>
-					<li><a href="">글로벌 모바일 비전(GMV)</a></li>
-					<li><a href="">서비스 수출대전(KSM)</a></li>
-					<li><a href="">글로벌 의료기기 수출상담회(Global Medical Equipment Plaza)</a></li>
-					<li><a href="">글로벌파트너링(GP)사업</a></li>
-				</ul>
-			</li>
-			
-			<li><!-- 파랑색 동그라미4 -->
-				<p style="background-color: cornflowerblue">해외 비지니스 포럼(수출상담회+설명회)-경제외교 제외</p>
-				<ul class="main3"><!-- 흰색 동그라미 -->
-					<li><a href="">K-Global@</a></li>
-					<li><a href="">바이오의료 해외진출 지원사업</a></li>
-				</ul>
-			</li>
-		</ul>	
+	<!-- 	<button type="button" >내용 숨기기</button> -->
 		
-	<button type="button" >내용 숨기기</button>
+		</li>
+		
+	<!-- 	<button type="button2" >내용 숨기기</button> -->
 	
-	</li>
+	</div>
 	
-	<button type="button2" >내용 숨기기</button>
-	
-	
-	
+	<div id="menu">
 	<li><!-- 2번 -->
 		<strong>무역사절단2</strong>
 		<ul class="main2">
@@ -174,11 +183,11 @@ table, tr, td {
 			</li>
 		</ul>	
 	</li>
+	</div>
 	
 	
 	
-	
-	
+	<div id="menu">
 	<li><!-- 3번 -->
 		<strong>전시회3</strong>
 		<ul class="main2">
@@ -209,10 +218,10 @@ table, tr, td {
 			</li>						
 		</ul>		
 	</li>
+	</div>
 	
 	
-	
-	
+	<div id="menu">
 	<li><!-- 4번 -->
 		<strong>기간제 맞춤형 지원4</strong>
 		<ul class="main2">
@@ -237,11 +246,11 @@ table, tr, td {
 			</li>
 		</ul>	
 	</li>
+	</div>
 	
 	
 	
-	
-	
+	<div id="menu">
 	<li><!-- 5번 -->
 		<strong>수출바우처5</strong>
 		<ul class="main2">
@@ -269,10 +278,10 @@ table, tr, td {
 			</li>
 		</ul>	
 	</li>	
+	</div>
 	
 	
-	
-	
+	<div id="menu">
 	<li><!-- 6번 -->
 		<strong>디지털 해외마케팅6</strong>
 		<ul class="main2">
@@ -313,10 +322,10 @@ table, tr, td {
 			</li>
 		</ul>	
 	</li>
+	</div>
 	
 	
-	
-	
+	<div id="menu">
 	<li><!-- 7번 -->
 		<strong>글로벌 역량강화7</strong>
 		<ul class="main2">
@@ -353,9 +362,9 @@ table, tr, td {
 			</li>			
 		</ul>	
 	</li>	
+	</div>
 	
-	
-	
+	<div id="menu">
 	<li><!-- 8번 -->
 		<strong>수출기업 애로해소8</strong>
 		<ul class="main2">
@@ -374,9 +383,9 @@ table, tr, td {
 			</ul>
 		</ul>	
 	</li>
+	</div>
 	
-	
-	
+	<div id="menu">
 	<li><!-- 9번 -->
 		<strong>해외시장정보조사9</strong>
 		<ul class="main2">
@@ -407,12 +416,13 @@ table, tr, td {
 			</li>			
 		</ul>		
 	</li>
+	</div>
 	
-	
-	
+	<div id="menu">
 	<li><!-- 10번 -->
 		<strong>교포무역인(OKTA) 협업10</strong>
 	</li>
+	</div>
 
 </ul>
 
