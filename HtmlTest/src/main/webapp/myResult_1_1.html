@@ -9,37 +9,60 @@
 
 <style type="text/css">
 
-ul, li {
-	list-style: none;
-	padding-left:0px;  }
-
 table, tr, td {
 	border: 1px solid #ccc;
 	border-collapse: collapse;  }
 	
-.leftMenu {
-	margin-left: 100px;
-	width: 150px;
+.menuSection {
+	position: relative; /* 해당 요소가 배치되어야 할 곳을 기준으로 상하좌우로 지정한 값 만큼 떨어진다.*/
+	background-color: aliceblue;
+ 	padding-left: 50px;
+ 	height: 350px; 
+/*  	text-align: center; */ /* 인라인 요소들을 가운데로 정렬 */
+/* 	float: left; */  /* 적용하지말기 */
 }
 	
-.rightMenu {
-	margin-left: 250px;
+#leftMenu {
+	margin-left: 80px;
+	width: 150px;
+/* 	height: 200px; */ /* 적용하지말기 */
 }
+table { 	background-color: white; }
+
+#rightMenu a, img {
+/*  	left: 100px;  */
+	background-color: white;
+	box-sizing: border-box; 
+	border-radius: 50%;
+}
+
+#bottomRight {
+	float: right;
+	padding: 0px;
+	margin-right: 100px;
+/* 	background-color: none; */
+}
+
+
+ul.main3 > li > a {
+/* 	text-decoration:none; */ /* a태그의 모든 밑줄,색상없애기 */
+	color: black;
+}
+
 	
 /* 위쪽 메뉴들 */	
 /* ---------------------------------------------------------- */
 /* 본문 */
+
+ul, li {
+	list-style: none;
+	padding-left:0px;  }
 
 hr { height: 2px; background-color: black; }
 a { text-decoration:none } 
 strong { font-size: 18px; width: 10px; } 
 
 
-.menuSection {
-	position: relative; /* 해당 요소가 배치되어야 할 곳을 기준으로 상하좌우로 지정한 값 만큼 떨어진다.*/
-	background-color: aliceblue;
-/* 	left: 100px; */
-}
 
 
 .secondsection { /* 두번째 구역 - 제목+본문 */
@@ -47,7 +70,7 @@ strong { font-size: 18px; width: 10px; }
 	
 	/* 최대화할때 없애야함!!-그럼 포지션:앱솔루트? */
 	top: 10px;
-	left: 250px;
+	left: 300px;
 /* 	bottom: 500px; */  /* 동작안함... */
  	background-color: antiquewhi; 
 /*  	background-color: red;  */
@@ -91,6 +114,7 @@ ul div  { /* 10개메뉴 전체설정 */
 	position: relative;
 /* 	padding-top: -40px; *//* 내부여백 */ 
 	margin-top: -30px; /* 외부여백 */ 
+	margin-left: -50px;
 } 
 
 .main2 > li > p {  /* 파랑색 동그라미 */
@@ -139,12 +163,9 @@ ul div  { /* 10개메뉴 전체설정 */
 	<h3>사업소개</h3>
 	
 	<table>
-		<tr>
-			<td><a href="">사업소개 홈</a></td>
-		</tr>
-		<tr>
-			<td><a href="">한 눈에 보는 KOTRA 서비스</a></td>
-		</tr>
+		<tr><td><a href="">사업소개 홈</a></td></tr>
+			
+		<tr><td><a href="">한 눈에 보는 KOTRA 서비스</a></td></tr>
 	</table>
 </div>
 
@@ -152,21 +173,28 @@ ul div  { /* 10개메뉴 전체설정 */
 	<h2>KOTRA에서 지원하는 수출입, 투자 사업 안내</h2>
 	
 	
-	<img alt="1st" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_ESP.png" width="100" height="100">
-	<a href="">수출지원</a> 
+	<a href=""><img alt="1st" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_ESP.png" width="50" height="50">수출지원</a> 
 	
-	<img alt="2nd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_OAS.png" width="100" height="100">
-	<a href="">해외진출지원</a> 
+	<a href=""><img alt="2nd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_OAS.png" width="50" height="50">해외진출지원</a> 
 	
-	<img alt="3rd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_GCO.png" width="100" height="100">
-	<a href="">경제협력 및 일자리 지원</a> 
+	<a href=""><img alt="3rd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_GCO.png" width="50" height="50">경제협력 및 일자리 지원</a> 
 	
-	<img alt="4th" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_FIN.png" width="100" height="100">
-	<a href="">외국인투자유치</a> 
-	
+	<a href=""><img alt="4th" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_FIN.png" width="50" height="50">외국인투자유치</a> 
+
+
+<!-- 메뉴선택시 발생되는 화살표 주소 -->
+<!-- https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/downArrow.png -->
+
+
+
+</div>	
+
+
+
+<div id="bottomRight">
 	<!-- <img alt="menu_bottomRight" src="/HtmlTest/src/main/webapp/imgs/menu-bottomRight.png" width="100px" height="50px"> -->
-	<img alt="menu_bottomRight" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/supBizRImg.png" width="200px" height="150px">
-</div>
+	<img alt="menu_bottomRight" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/supBizRImg.png" width="200px" height="150px" style="overflow: visible;" >
+</div>	
 
 </div><!-- 첫번째 구역 -->
 
