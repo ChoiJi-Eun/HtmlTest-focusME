@@ -36,13 +36,12 @@ table, tr, td {
 	bottom: 200px;
 	
 	background-color: antiquewhi;
+	float: left;
 }
 
- p { 
-   	width: 150px; 
- }   
 
-/* .main2 >li> ul > li {	 */
+
+/* .main2 >li> ul > li {	 */ /* 흰동그라미 */
 /* /* 	width: 30%; */ */
 /* 	border:  1px solid red; */
 /* 	padding: 5px; */
@@ -54,9 +53,22 @@ table, tr, td {
 	border-bottom: 1px solid #ccc;
 }
 
-.main2 > li {
-	box-sizing: content-box;
+.main2 {
+	position: absolute;
+	left: 200px;
+	width: 200px;
 }
+
+.main3 {
+	position: absolute;
+	left: 200px;
+	width: 300px;
+}
+
+/* .main2 > li { */
+/*  	box-sizing: content-box;  */
+/* 	width: 150px; */
+/* } */
 
 </style>
 </head>
@@ -141,7 +153,7 @@ table, tr, td {
 	
 	<li><!-- 2번 -->
 		<strong>무역사절단2</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">무역사절단 (Outbound)</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -157,7 +169,7 @@ table, tr, td {
 	
 	<li><!-- 3번 -->
 		<strong>전시회3</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미1 -->
 				<p style="background-color: cornflowerblue">국내전시회-(공동주관, 단독개최 등)</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -191,7 +203,7 @@ table, tr, td {
 	
 	<li><!-- 4번 -->
 		<strong>기간제 맞춤형 지원4</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">지사화 사업(선택형 지원)</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -220,7 +232,7 @@ table, tr, td {
 	
 	<li><!-- 5번 -->
 		<strong>수출바우처5</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">산업별 선도기업 바우처</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -251,7 +263,7 @@ table, tr, td {
 	
 	<li><!-- 6번 -->
 		<strong>디지털 해외마케팅6</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">바이오코리아 플랫폼 활용</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -295,7 +307,7 @@ table, tr, td {
 	
 	<li><!-- 7번 -->
 		<strong>글로벌 역량강화7</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">글로벌역량진단(GCL)</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -334,7 +346,7 @@ table, tr, td {
 	
 	<li><!-- 8번 -->
 		<strong>수출기업 애로해소8</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">수출 컨설팅 상담(온/오프라인)</p>
 				<ul><!-- 흰색 동그라미 -->
@@ -355,7 +367,7 @@ table, tr, td {
 	
 	<li><!-- 9번 -->
 		<strong>해외시장정보조사9</strong>
-		<ul>
+		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">설명회(온/오프라인)</p>
 				<ul><!-- 흰색 동그라미 -->
