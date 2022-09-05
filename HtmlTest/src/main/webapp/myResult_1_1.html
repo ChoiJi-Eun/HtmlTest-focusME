@@ -32,13 +32,17 @@ table, tr, td {
 	/* 최대화할때 없애야함!! */
 	top: 10px;
 	left: 200px;
-	right: 100px;
+	right: 200px;
 	bottom: 200px;
 	
 	background-color: antiquewhi;
-	float: left;
+/* 	float: left; */
 }
 
+.middlesection {
+	position: relative; 	
+	top: 10px;
+}
 
 
 /* .main2 >li> ul > li {	 */ /* 흰동그라미 */
@@ -51,18 +55,24 @@ table, tr, td {
 	padding-bottom: 50px;
 	padding-top: 20px;
 	border-bottom: 1px solid #ccc;
+	height: 500px;
 }
 
 .main2 {
 	position: absolute;
 	left: 200px;
-	width: 200px;
+	width: 250px;
+/* 	height: 500px; */
+/* 	padding-bottom: 50px; */
 }
 
 .main3 {
 	position: absolute;
-	left: 200px;
+	left: 300px;
 	width: 300px;
+	background-color: yellow;
+/* 	height: 500px; */
+/* 	padding-bottom: 50px; */
 }
 
 /* .main2 > li { */
@@ -99,11 +109,13 @@ table, tr, td {
 </div><!-- 첫번째 구역 -->
 
 
+<div class="middlesection"><!-- 가운데 구역 - 제목? -->
+	<h3>수출지원</h3>
+	<hr>
+</div>
 
 
 <div class="secondsection"><!-- 두번째 구역-본문 -->
-<h3>수출지원</h3>
-<hr>
 
 
 <ul class="main1">
@@ -119,13 +131,13 @@ table, tr, td {
 			
 			<li><!-- 파랑색 동그라미2 -->
 				<p style="background-color: cornflowerblue">해외 출장수출상담지원(개별기업)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">ICT 글로벌 멘토링 센터</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미3 -->
 				<p style="background-color: cornflowerblue">국내 비즈니스 포럼(수출상담회+설명회)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">대한민국 소비재 수출대전</a></li>
 					<li><a href="">글로벌 모바일 비전(GMV)</a></li>
 					<li><a href="">서비스 수출대전(KSM)</a></li>
@@ -136,7 +148,7 @@ table, tr, td {
 			
 			<li><!-- 파랑색 동그라미4 -->
 				<p style="background-color: cornflowerblue">해외 비지니스 포럼(수출상담회+설명회)-경제외교 제외</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">K-Global@</a></li>
 					<li><a href="">바이오의료 해외진출 지원사업</a></li>
 				</ul>
@@ -147,7 +159,7 @@ table, tr, td {
 	
 	</li>
 	
-	<button type="button" >내용 숨기기</button>
+	<button type="button2" >내용 숨기기</button>
 	
 	
 	
@@ -156,7 +168,7 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">무역사절단 (Outbound)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">무역사절단 외부협력사업</a></li>
 				</ul>
 			</li>
@@ -172,26 +184,26 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미1 -->
 				<p style="background-color: cornflowerblue">국내전시회-(공동주관, 단독개최 등)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">국내전시회</a></li>
 					<li><a href="">SEOUL FOOD</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미2 -->
 				<p style="background-color: cornflowerblue">해외전시회-(개별참가, 단체 참가 등)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">해외전시회</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미3 -->
 				<p style="background-color: cornflowerblue">해외전시 특화마케팅(한국상품전 등)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">한국우수상품전</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미4 -->
 				<p style="background-color: cornflowerblue">세계엑스포 개최</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">세계엑스포</a></li>
 				</ul>
 			</li>						
@@ -206,19 +218,19 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">지사화 사업(선택형 지원)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">지사화사업</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">해외 공동물류 지원</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">해외물류네트워크</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">산업별 맞춤형 지원</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">IT컨소시엄 수출지원사업</a></li>
 					<li><a href="">서비스 해외거점 지원사업</a></li>
 				</ul>
@@ -235,7 +247,7 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">산업별 선도기업 바우처</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">소비재 선도기업 육성사업</a></li>
 					<li><a href="">서비스 선도기업 육성사업</a></li>
 					<li><a href="">그린 선도기업 육성사업</a></li>
@@ -245,13 +257,13 @@ table, tr, td {
 			</li>
 				<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">중견기업 글로벌화 바우처</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">중견기업 글로벌 지원사업</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">물류전용 수출바우처</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">물류전용 수출바우처</a></li>
 				</ul>
 			</li>
@@ -266,13 +278,13 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">바이오코리아 플랫폼 활용</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">바이오코리아</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">트라이빅(빅데이터) 활용</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">무역투자통계</a></li>
 					<li><a href="">국가별 사장정보</a></li>
 					<li><a href="">품목별 유망시장</a></li>
@@ -282,20 +294,20 @@ table, tr, td {
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">온라인 수출상담(화상상담)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">화상상담</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">해외 온라인플랫폼 입점 및 판촉</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">해외유통망 협업사업</a></li>
 					<li><a href="">글로벌 유통망 진입확대사업</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">디지털 현장실사</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">디지털 현장실사</a></li>
 				</ul>
 			</li>
@@ -310,32 +322,32 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">글로벌역량진단(GCL)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">GCL테스트</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">내수기업 수출기업화,(소상공인 포함)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">내수기업 수출기업화 사업</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">스타트업 해외진출 지원</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">스타트업 해외진출 지원</a></li>
 					<li><a href="">글로벌 오픈이노베이션 진입 지원</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 			<p style="background-color: cornflowerblue">세계일류상품 육성</p>
-			<ul><!-- 흰색 동그라미 -->
+			<ul class="main3"><!-- 흰색 동그라미 -->
 				<li><a href="">세계일류상품 육성</a></li>
 			</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">글로벌 역량강화 교육연수</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">교육과정 자체운영</a></li>
 				</ul>
 			</li>			
@@ -349,13 +361,13 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">수출 컨설팅 상담(온/오프라인)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">이동 KOTRA</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 			<p style="background-color: cornflowerblue">해외 지식 재산권 보호</p>
-			<ul><!-- 흰색 동그라미 -->
+			<ul class="main3"><!-- 흰색 동그라미 -->
 				<li><a href="">해외지식재산센터(IP-DESK)</a></li>
 				<li><a href="">IP-DESK 미소재 국가 지원</a></li>
 				<li><a href="">해외 상표조사 지원</a></li>
@@ -370,26 +382,26 @@ table, tr, td {
 		<ul class="main2">
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">설명회(온/오프라인)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">설명회</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">맞춤형 해외시장조사(유료)</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">수출24 글로벌대행서비스(해외시장조사)</a></li>
 				</ul>
 			</li>
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">해외시장뉴스 관리 및 전파</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">해외시장뉴스</a></li>
 					<li><a href="">국가정보</a></li>
 				</ul>
 			</li>			
 			<li><!-- 파랑색 동그라미 -->
 				<p style="background-color: cornflowerblue">발간자료 관리 및 무역자료실</p>
-				<ul><!-- 흰색 동그라미 -->
+				<ul class="main3"><!-- 흰색 동그라미 -->
 					<li><a href="">무역자료실 운영</a></li>
 				</ul>
 			</li>			
