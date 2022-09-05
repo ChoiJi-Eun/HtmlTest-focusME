@@ -16,6 +16,19 @@ ul, li {
 table, tr, td {
 	border: 1px solid #ccc;
 	border-collapse: collapse;  }
+	
+.leftMenu {
+	margin-left: 100px;
+	width: 150px;
+}
+	
+.rightMenu {
+	margin-left: 250px;
+}
+	
+/* 위쪽 메뉴들 */	
+/* ---------------------------------------------------------- */
+/* 본문 */
 
 hr { height: 2px; background-color: black; }
 a { text-decoration:none } 
@@ -34,7 +47,7 @@ strong { font-size: 18px; width: 10px; }
 	
 	/* 최대화할때 없애야함!!-그럼 포지션:앱솔루트? */
 	top: 10px;
-	left: 200px;
+	left: 250px;
 /* 	bottom: 500px; */  /* 동작안함... */
  	background-color: antiquewhi; 
 /*  	background-color: red;  */
@@ -122,24 +135,38 @@ ul div  { /* 10개메뉴 전체설정 */
 <!-- 첫번째 구역 -->
 <div id="menuSection" name="menuSection" class="menuSection">
 
-<h3>사업소개</h3>
+<div id="leftMenu" >
+	<h3>사업소개</h3>
+	
+	<table>
+		<tr>
+			<td><a href="">사업소개 홈</a></td>
+		</tr>
+		<tr>
+			<td><a href="">한 눈에 보는 KOTRA 서비스</a></td>
+		</tr>
+	</table>
+</div>
 
-<table>
-	<tr>
-		<td><a href="">사업소개 홈</a></td>
-	</tr>
-	<tr>
-		<td><a href="">한 눈에 보는 KOTRA 서비스</a></td>
-	</tr>
-</table>
-
-<h4>KOTRA에서 지원하는 수출입, 투자 사업 안내</h4>
-
-<a href="">수출지원</a> 
-<a href="">해외진출지원</a> 
-<a href="">경제협력 및 일자리 지원</a> 
-<a href="">외국인투자유치</a> 
-
+<div id="rightMenu">
+	<h2>KOTRA에서 지원하는 수출입, 투자 사업 안내</h2>
+	
+	
+	<img alt="1st" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_ESP.png" width="100" height="100">
+	<a href="">수출지원</a> 
+	
+	<img alt="2nd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_OAS.png" width="100" height="100">
+	<a href="">해외진출지원</a> 
+	
+	<img alt="3rd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_GCO.png" width="100" height="100">
+	<a href="">경제협력 및 일자리 지원</a> 
+	
+	<img alt="4th" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_FIN.png" width="100" height="100">
+	<a href="">외국인투자유치</a> 
+	
+	<!-- <img alt="menu_bottomRight" src="/HtmlTest/src/main/webapp/imgs/menu-bottomRight.png" width="100px" height="50px"> -->
+	<img alt="menu_bottomRight" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/supBizRImg.png" width="200px" height="150px">
+</div>
 
 </div><!-- 첫번째 구역 -->
 
