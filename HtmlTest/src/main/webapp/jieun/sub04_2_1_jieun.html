@@ -6,13 +6,144 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+
+	// 왼쪽 상단 테이블 - 클릭시 백그라운드 적용하기
+	
+// 	$("#menutable1").click(function() {
+// 		$("#menutable1").css("background", "blue")
+// 	})
+// 	$("#menutable2").click(function() {
+// 		$("#menutable2").css("background", "blue")
+// 	})
+	// 클릭하면 글씨부분만 파란색이 잠시 뜨다가 사라짐
+	//------------------------------------
+	
+	$("#menutable1").click(function() {
+		$("#menutable1").css("background", "blue")
+	})
+	$("#menutable2").click(function() {
+		$("#menutable2").css("background", "blue")
+	})	
+	
+	
+	
+	
+	
+	
+// 본문안의 각 메뉴별 버튼 접기/펼치기
+	
+	console.log()
+	console.log()
+	//------------------------------------
+})
+</script>
+<style type="text/css">
+
+/* -------- 하늘색 배경 메뉴들=> 여기는 하늘색은 아님 --------------- */	
+table { 	
+	background-color: white; 
+	height: 100px;
+} 
+
+table, tr, td {
+	border: 1px solid #ccc;
+ 	border-collapse: collapse;  
+/*   	display:inline-block;   */
+	text-align : initial;
+	padding-left:1em;
+	padding-right: 2em;
+}
+	
+.menuSection {
+	position: relative; /* 해당 요소가 배치되어야 할 곳을 기준으로 상하좌우로 지정한 값 만큼 떨어진다.*/
+/* 	background-color: aliceblue; */ /* 하늘색 적용하지말기!! */
+ 	padding-left: 50px;
+ 	height: 350px; 
+/*  	text-align: center; */ /* 인라인 요소들을 가운데로 정렬 */
+/* 	float: left; */  /* 적용하지말기 */
+}
+
+div.menuSection {
+	width: 100%;
+}
+	
+#leftMenu {
+ 	margin-left: 20px;
+	width: 15%;
+/* 	height: 200px; */ /* 적용하지말기 */
+	float: left;
+	box-sizing: border-box;
+}
+
+a {	text-decoration: none;  }
+
+
+
+/* 하늘색 - 상단 왼쪽 메뉴 테이블 */
+/* --------------------------------- */
+/* 하늘색 - 상단 오른쪽 */
+
+
+#rightMenu {
+ 	margin-left: 300px;
+
+ 	position: relative;
+
+} 
+
+
+
+
+
+
+</style>
 </head>
 <body>
 
 
-<h3>한 눈에 보는 KOTRA 서비스</h3>
-<hr>
 
+<!-- 첫번째 구역 -->
+<div id="menuSection" name="menuSection" class="menuSection">
+
+	<div id="leftMenu" >
+		<h3>사업소개</h3>
+		
+		<table>
+			<tr><td><a href="../jieun/sub04_1_1_jieun.html" id="menutable1">사업소개 홈</a></td></tr>
+				
+			<tr><td><a href="../jieun/sub04_2_1_jieun.html" id="menutable2">한 눈에 보는 KOTRA 서비스</a></td></tr>
+		</table>
+	</div><!-- leftMenu end -->
+
+
+	<div id="rightMenu">
+		<br><h2>한 눈에 보는 KOTRA 서비스</h2><hr>
+		
+		<div id="menuA">
+		
+		
+		
+		
+		</div>
+	
+	
+
+	
+	
+	
+
+
+	</div><!-- rightMenu end -->	
+
+
+
+
+
+</div><!-- 첫번째 구역 끝-->
 
 
 </body>
