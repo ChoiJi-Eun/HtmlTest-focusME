@@ -20,7 +20,8 @@ $(document).ready( function() {
 </script>
 
 <style type="text/css">
-
+body {  font-size: large; }
+  
 /* -------- 하늘색 배경 메뉴들 --------------- */	
 table { 	
 	background-color: white; 
@@ -40,7 +41,7 @@ table, tr, td {
 	position: relative; /* 해당 요소가 배치되어야 할 곳을 기준으로 상하좌우로 지정한 값 만큼 떨어진다.*/
 	background-color: aliceblue;
  	padding-left: 50px;
- 	height: 350px; 
+ 	height: 370px;  
 /*  	text-align: center; */ /* 인라인 요소들을 가운데로 정렬 */
 /* 	float: left; */  /* 적용하지말기 */
 }
@@ -71,23 +72,13 @@ div.menuSection {
 /* 유색: (0,0)~(60,0) / 무색: (0,60)~(60,120) ===>> 어떻게 적용하는거냐구?/?ㅜㅜ */
  #menuA > a {  /* 기본으로 무색 이미지가 각각 따로 보이고!!! 나중에 클릭이벤트 넣기 */
 	display: inline-block;
-	width: 120px;
-	height: 120px; 
-	top: 20px;
+	width: 170px;
+	height: 150px; 
+	font-size: 15px;
+ 	margin-top: 53px; 
 	margin-bottom: 0;
 	position: relative;
-/* 	position: absolute; */ /* 적용하지 말기! 하나로 합쳐짐 */
 
-     background: url( "../image/sub04_1st.png" ); 
-/*     				, url( "../image/sub04_2nd.png" )   */
-/*     				, url( "../image/sub04_3rd.png" ) */
-/*     				, url( "../image/sub04_4th.png" );    */
-   	background-repeat: no-repeat;   
-/*    	background-position-y:  center bottom;    */
-	background-position-x: center;
-     background-position-y:  -54px;      
-/* 	background-position: 30px, -50px; */
-/*    	background-size: 60px;    */
     border: 2px solid red;  
     margin-left: 50px;    
    	background-color: white;   
@@ -96,57 +87,19 @@ div.menuSection {
 
  }  
  
- 
 
-
-#1st { 		/* #menuA > a > span - 하지마 */
-/*     	background: url( "../image/sub04_1st.png" );   */
-/*   	background-repeat: no-repeat;   */
-/*    	background-position-y:  center bottom;    */   
-/* 	position: bottom; */
-	margin-bottom: 0;
-} 
-
-/* #2nd { */
-/*    	background-image: url( "../image/sub04_2nd.png" );  */
-/*   	background-repeat: no-repeat;   */
-/* /*    	background-position-y:  center bottom;    */ */
-/* } */
-/* #3rd { */
-/*    	background-image: url( "../image/sub04_3rd.png" );  */
-/*   	background-repeat: no-repeat;   */
-/* /*    	background-position-y:  center bottom;    */ */
-/* } */
-/* #4th { */
-/*    	background-image: url( "../image/sub04_4th.png" );  */
-/*   	background-repeat: no-repeat;   */
-/* /*    	background-position-y:  center bottom;    */ */
-/* } */
-
-
-/* background : ①배경색 ②배경 이미지 주소 ③배경 반복 ④배경 위치 고정 ⑤배경 위치 */
-/* #menuA a {   */
-/*   	background: url( "../image/sub04_1st.png" ) white no-repeat center bottom;     */
-/*   	background: url( "../image/sub04_2nd.png" ) white no-repeat center bottom;      	 */
-/*   	background: url( "../image/sub04_3rd.png" ) white no-repeat center bottom;   */
-/*  	background: url( "../image/sub04_4th.png" ) white no-repeat center bottom;     */
-/* }   */
 
 
 #rightMenu {
- 	margin-left: 270px;
+ 	margin-left: 400px; 
  	height: 300px;
  	width: 80%; 
  	left: 20px;
- 	position: relative;
-/*  	float: right;  */
-/* 	box-sizing: border-box; */
+
 } 
 
 #menuArrow {  /* 나중에 위쪽 메뉴 클릭시 화살표도 이동해야해 */
-/*  	position: relative; */
-/*  	top: 80px; */
-/*  	left: -50px;  */
+
 
  	position: absolute; 
 	bottom: 0;
@@ -158,24 +111,12 @@ div.menuSection {
 
 .menu_bottomRight { /* 하늘색바탕 오른쪽 바닥 img */
 	position: absolute;
-	right: 300px;
-	bottom: 0;
+	left: 1150px;
+	left: 1200px;
+	top: 227px;
 	display: inline-block;
 }
 
-/* #rightMenu a, img { */
-/* /*  	left: 100px;  */ */
-/*  	background-color: white;  */
-/* 	box-sizing: border-box;  */
-/* 	border-radius: 50%; */
-/* } */
-
-/* #bottomRight { */
-/* 	float: right; */
-/* 	padding: 0px; */
-/* 	margin-right: 100px; */
-/* /* 	background-color: none; */ */
-/* } */
 
 
 
@@ -204,14 +145,14 @@ strong { font-size: 18px; width: 10px; }
 	
 	/* 최대화할때 없애야함!!-그럼 포지션:앱솔루트? */
 	top: 10px;
-	left: 300px;
+	left: 380px;
 /* 	bottom: 500px; */  /* 동작안함... */
  	background-color: antiquewhi; 
 /*  	background-color: red;  */
 /*  	float: left;  */ /* 적용하지말기 */
 /* 	font-weight: bold; */
 /* 	padding-right: 300px; */  /* 적용하지 말기 */
-	width: 70%; /* 본문 왼오 사이즈 */
+	width: 55%; /* 본문 왼오 사이즈 */
 }
 
 .middlesection { /* 두번째 구역 - 제목 */
@@ -242,6 +183,7 @@ ul div  { /* 10개메뉴 전체설정 */
 }
 
 .main3 {
+	top: -27px;
 	left: 300px;
 	width: 600px;
 	box-sizing: border-box;
@@ -255,7 +197,7 @@ ul div  { /* 10개메뉴 전체설정 */
 /*   	box-sizing: content-box;  */
  	border: 2px solid #ccc; 
 	border-radius: 15px;
-	padding-top: 0px;
+	padding: 5px;
 	margin-top: 0px;
 	color: white;
 /* 	text-indent: 15px; */
@@ -270,7 +212,7 @@ ul div  { /* 10개메뉴 전체설정 */
 /*  	background-color: yellow;  */
  	border: 2px solid #ccc; 
 	border-radius: 40px;
-	padding-top: 0px;
+	padding: 5px;
 	margin-top: 0px;
 	left: 10px;
 	right: 10px;
@@ -338,9 +280,9 @@ button:focus {
 		<h3>사업소개</h3>
 		
 		<table>
-			<tr><td><a href="">사업소개 홈</a></td></tr>
+			<tr><td><a href="../jieun/sub04_1_1_jieun.html">사업소개 홈</a></td></tr>
 				
-			<tr><td><a href="">한 눈에 보는 KOTRA 서비스</a></td></tr>
+			<tr><td><a href="../jieun/sub04_2_1_jieun.html">한 눈에 보는 KOTRA 서비스</a></td></tr>
 		</table>
 	</div><!-- leftMenu end -->
 
@@ -349,14 +291,13 @@ button:focus {
 		<br><h2>KOTRA에서 지원하는 수출입, 투자 사업 안내</h2>
 		
 		<div id="menuA">
-			<a href="" id="1st"><span>수출지원</span> </a>
+			<a href="../jieun/sub04_1_1_jieun.html" id="1st"><span>수출지원</span> </a>
 			
-			<a href="" id="2nd" src="../image/sub04_2nd.png"><span>해외진출지원</span></a> 
+			<a href="../jieun/sub04_1_2_jieun.html" id="2nd" ><span>해외진출지원</span></a> 
 			
-			<a href=""><span id="3rd">경제협력 및 일자리 지원</span></a> 
+			<a href="../jieun/sub04_1_3_jieun.html"><span id="3rd">경제협력 및 일자리 지원</span></a> 
 			
-			<a href="" url="../image/sub04_4th.png"><span class="4th">외국인투자유치</span></a> 
-		
+			<a href="../jieun/sub04_1_4_jieun.html"><span class="4th">외국인투자유치</span></a> 		
 		
 	<!-- 	<a href=""><img alt="1st" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_ESP.png" width="50" height="50">수출지원</a>  -->
 	<!-- 	<a href=""><img alt="1st" src="../image/sub04_1st.png" width="100" height="100">수출지원</a>  -->
