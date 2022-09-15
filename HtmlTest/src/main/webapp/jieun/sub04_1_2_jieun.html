@@ -39,7 +39,7 @@ table, tr, td {
 	
 .menuSection {
 	position: relative; /* 해당 요소가 배치되어야 할 곳을 기준으로 상하좌우로 지정한 값 만큼 떨어진다.*/
-	background-color: aliceblue;
+	background-color: #9EF8EE;
  	padding-left: 50px;
  	height: 370px;  
 /*  	text-align: center; */ /* 인라인 요소들을 가운데로 정렬 */
@@ -72,9 +72,9 @@ div.menuSection {
 /* 유색: (0,0)~(60,0) / 무색: (0,60)~(60,120) ===>> 어떻게 적용하는거냐구?/?ㅜㅜ */
  #menuA > a {  /* 기본으로 무색 이미지가 각각 따로 보이고!!! 나중에 클릭이벤트 넣기 */
 	display: inline-block;
-	width: 170px;
-	height: 150px; 
-	font-size: 15px;
+	width: 160px;
+	height: 140px;
+	font-size: 14px;
  	margin-top: 53px; 
 	margin-bottom: 0;
 	position: relative;
@@ -91,7 +91,7 @@ div.menuSection {
 
 
 #rightMenu {
- 	margin-left: 400px; 
+ 	margin-left: 350px;
  	height: 300px;
  	width: 80%; 
  	left: 20px;
@@ -103,7 +103,7 @@ div.menuSection {
 
  	position: absolute; 
 	bottom: 0;
-	left: 410px;
+	left: 500px;
 	background: 0;
 
 }
@@ -111,8 +111,7 @@ div.menuSection {
 
 .menu_bottomRight { /* 하늘색바탕 오른쪽 바닥 img */
 	position: absolute;
-	left: 1150px;
-	left: 1200px;
+	left: 1300px;
 	top: 227px;
 	display: inline-block;
 }
@@ -135,7 +134,7 @@ ul, li {
 
 hr { height: 2px; background-color: black; }
 a { text-decoration:none } 
-strong { font-size: 18px; width: 10px; } 
+strong { font-size: 21px; width: 10px; height: 15px; } 
 
 
 
@@ -145,7 +144,7 @@ strong { font-size: 18px; width: 10px; }
 	
 	/* 최대화할때 없애야함!!-그럼 포지션:앱솔루트? */
 	top: 10px;
-	left: 380px;
+	left: 450px;
 /* 	bottom: 500px; */  /* 동작안함... */
  	background-color: antiquewhi; 
 /*  	background-color: red;  */
@@ -198,7 +197,6 @@ ul div  { /* 10개메뉴 전체설정 */
  	border: 2px solid #ccc; 
 	border-radius: 15px;
 	padding: 5px;
-	margin-top: 0px;
 	color: white;
 /* 	text-indent: 15px; */
 /* 	display:inline-block; */
@@ -206,6 +204,7 @@ ul div  { /* 10개메뉴 전체설정 */
 /* 	text-align : initial; */
   	padding-left:1em; 
 	padding-right: 1em;
+	margin-block-end: auto;
 }  
 
 .main2 >li> ul > li {	 /* 흰동그라미 */ 
@@ -290,24 +289,30 @@ button:focus {
 		<br><h2>KOTRA에서 지원하는 수출입, 투자 사업 안내</h2>
 		
 		<div id="menuA">
-			<a href="../jieun/sub04_1_1_jieun.html" id="1st"><span>수출지원</span> </a>
-			
-			<a href="../jieun/sub04_1_2_jieun.html" id="2nd" ><span>해외진출지원</span></a> 
-			
-			<a href="../jieun/sub04_1_3_jieun.html"><span id="3rd">경제협력 및 일자리 지원</span></a> 
-			
-			<a href="../jieun/sub04_1_4_jieun.html"><span class="4th">외국인투자유치</span></a> 
 		
+			<!--  -->
+<!-- 			<a href="../jieun/sub04_1_1_jieun.html" id="1st"><span>수출지원</span> </a> -->
+<!-- 			<a href="../jieun/sub04_1_2_jieun.html" id="2nd" ><span>해외진출지원</span></a>  -->
+<!-- 			<a href="../jieun/sub04_1_3_jieun.html"><span id="3rd"></span>경제협력 및 일자리 지원</a>  -->
+<!-- 			<a href="../jieun/sub04_1_4_jieun.html"><span class="4th"></span>외국인투자유치</a>  -->
 		
-		
-	<!-- 	<a href=""><img alt="1st" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_ESP.png" width="50" height="50">수출지원</a>  -->
-	<!-- 	<a href=""><img alt="1st" src="../image/sub04_1st.png" width="100" height="100">수출지원</a>  -->
-	<!-- 	<a href=""><img alt="2nd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_OAS.png" width="50" height="50">해외진출지원</a>  -->
-	<!-- 	<a href=""><img alt="2nd" src="../image/sub04_2nd.png" width="100" height="100">해외진출지원</a>  -->
-	<!-- 	<a href=""><img alt="3rd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_GCO.png" width="50" height="50">경제협력 및 일자리 지원</a>  -->
-	<!-- 	<a href=""><img alt="3rd" src="../image/sub04_3rd.png" width="100" height="100">경제협력 및 일자리 지원</a>  -->
-	<!-- 	<a href=""><img alt="4th" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_FIN.png" width="50" height="50">외국인투자유치</a>  -->
-	<!-- 	<a href=""><img alt="4th" src="../image/sub04_4th.png" width="100" height="100">외국인투자유치</a>  -->
+		<!-- 절대경로 -->
+<!-- 		<a href="../jieun/sub04_1_1_jieun.html"><img alt="1st" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_ESP.png" width="50" height="50">수출지원</a>  -->
+<!-- 		<a href="../jieun/sub04_1_2_jieun.html"><img alt="2nd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_OAS.png" width="50" height="50">해외진출지원</a>  -->
+<!-- 		<a href="../jieun/sub04_1_3_jieun.html"><img alt="3rd" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_GCO.png" width="50" height="50">경제협력 및 일자리 지원</a>  -->
+<!-- 		<a href="../jieun/sub04_1_4_jieun.html"><img alt="4th" src="https://www.kotra.or.kr/images/wzwg/site/kotra/subhome/subhome_supbiz_FIN.png" width="50" height="50">외국인투자유치</a>  -->
+
+
+		<!-- 상대경로 -->
+			<a href="../jieun/sub04_1_1_jieun.html"><img alt="1st" src="../image/sub04_1st.png" width="100" height="100"><br>수출지원</a> 
+			
+			<a href="../jieun/sub04_1_2_jieun.html"><img alt="2nd" src="../image/sub04_2nd.png" width="100" height="100"><br>해외진출지원</a> 
+			
+			<a href="../jieun/sub04_1_3_jieun.html"><img alt="3rd" src="../image/sub04_3rd.png" width="100" height="100"><br>경제협력 및 일자리 지원</a> 
+			
+			<a href="../jieun/sub04_1_4_jieun.html"><img alt="4th" src="../image/sub04_4th.png" width="100" height="100" ><br>외국인투자유치</a> 
+
+
 		</div>
 
 	
